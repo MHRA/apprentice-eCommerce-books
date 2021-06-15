@@ -10,7 +10,7 @@ export default function MainPage (){
 
   function handleLink(nav) {
       window.location.href = nav;
-      console.log('The link was clicked.')
+      console.log('The link was clicked')
   }
 
   function handleCategory(cat){
