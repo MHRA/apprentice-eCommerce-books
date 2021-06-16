@@ -62,22 +62,6 @@ app.post('/category', (req, res) => {
 })
 
 
-app.get('/search/:searchTerm', (req, res) => {
-    let searchTerm = req.params.searchTerm;
-   
-    const SELECT_SEARCHED_BOOKS = ("SELECT * FROM ecommerce.book_details WHERE ecommerce.book_details.name LIKE '%" + searchTerm + "%'")
-
-    connection.query(SELECT_SEARCHED_BOOKS, (err, results) => {
-        if(err) {
-            return res.send(err)
-        }
-        else {
-            return res.json({
-                data: results
-            })
-        }
-    })
-})
 
 app.get('/book-details/:id', (req, res) => {
     let searchTerm = req.params.id;
@@ -105,8 +89,8 @@ app.get('/book-details/:id', (req, res) => {
 
 
 app.post("/search", (req, res) => {
-    let input = req.body.name;
-    connection.query("SELECT * FROM ecommerce.book_details WHERE ecommerce.book_details.name LIKE ?;", "%" + input + "%", (err, results) => {
+    let input = req.body.search;
+    connection.query("SELECT ecommerce.book_details.details_id, ecommerce.book_details.`name`, ecommerce.book_details.price, ecommerce.book_details.total_rating, ecommerce.book_appearance.image, ecommerce.book_categories.category FROM ecommerce.book_details RIGHT JOIN ecommerce.book_appearance ON ecommerce.book_details.appearance_id = ecommerce.book_appearance.appearance_id RIGHT JOIN ecommerce.book_categories ON ecommerce.book_details.details_id = ecommerce.book_categories.book_id WHERE ecommerce.book_details.name LIKE ?;", "%" + input + "%", (err, results) => {
         if(err) {
             return res.send(err)
         }

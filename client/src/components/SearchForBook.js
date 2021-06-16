@@ -1,10 +1,16 @@
 import React, { Component } from "react"
-
+import ListItem
+ from "./ListItem";
 class SearchForBook extends Component {
   state = {
     name: "",
     returned: []
   };
+
+   handleLink = (nav) => {
+    window.location.href = nav;
+    console.log('The link was clicked')
+}
 
   setStateToBook = (book) => {
     return new Promise((resolve, reject) => {
@@ -47,15 +53,10 @@ class SearchForBook extends Component {
        </div>
        {this.state.returned.map((book)=>{
         return(
-            <div key = {book.id}>
-              <div>
-                <div>
-                  <h1>{book.name}</h1>
-                  <h2>{book.ratings}</h2>
-                  <p></p>
-                </div>
-              </div>
-            </div>
+          <ListItem
+          key={book.details_id}
+          book={book}
+          handleLink={this.handleLink}/>
       )})}
       </div>
     );

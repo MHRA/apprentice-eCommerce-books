@@ -103,49 +103,94 @@ span {
   margin: 0 40px 0 16px;
   box-sizing: border-box;
   border: transparent;
-  border-radius: 60px;
+  border-radius: 10px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
-  background-color: #9cebd5;
+  background-color: #00b4cc;
   cursor: pointer;
   outline: none;
 }
 
 .book-price-btn button:hover {
-  background-color: #79b0a1;
+  background-color: #396bf3;
 }
 
 .book-category-btn button {
+  width: 10%;
+  position: relative;
+  top: 40px;
+  left: 40%;
+  margin: 2px;
+  transform: translate(-50%, -50%);
+
   text-align: center;
-  display: inline-block;
   height: 50px;
-  width: 28%;
-  margin: 10px 50px 0 30px;
   box-sizing: border-box;
   border: transparent;
-  border-radius: 60px;
+  background-color: #00b4cc;
+
+  border-radius: 10px;
+  color: #ffffff;
+  letter-spacing: 0.2em;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #ffffff;
-  background-color: #9cebd5;
-  cursor: pointer;
-  outline: none;
-}
-
-.searchbox {
-  
 }
 
 .book-category-btn button:hover {
-  background-color: #79b0a1;
+  background-color: #396bf3;
 }
+
+/*SEARCH STUFF */
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.searchWrap {
+  width: 30%;
+  position: relative;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*SEARCH STUFF END*/
 
 .App {
   text-align: center;
