@@ -6,6 +6,7 @@ body {
   height: 420px;
   width: 654px;
   margin: 50px auto;
+
   border-radius: 7px 7px 7px 7px;
   /* VIA CSS MATIC https://goo.gl/cIbnS */
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -99,7 +100,7 @@ span {
   float: right;
   display: inline-block;
   height: 50px;
-  width: 176px;
+  width: 110px;
   margin: 0 40px 0 16px;
   box-sizing: border-box;
   border: transparent;
@@ -162,7 +163,7 @@ span {
   height: 20px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9dbfaf;
+  color: #6e8178;
 }
 
 .searchTerm:focus {
@@ -188,6 +189,10 @@ span {
   top: 25px;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*SEARCH STUFF END*/
@@ -221,10 +226,6 @@ span {
 .App-link {
   color: #61dafb;
 }
-
-
-
-
 
 /*
 Details page styling
@@ -272,13 +273,13 @@ Details page styling
 
 .product-text1 h1,
 .product-price-btn p {
-  font-family: 'Bentham', serif;
+  font-family: "Bentham", serif;
 }
 
 .product-text1 h2 {
   margin: 0 0 47px 38px;
   font-size: 30px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #a8a7a7;
@@ -288,7 +289,7 @@ Details page styling
 .product-text1 p {
   height: 45px;
   margin: 0 0 0 38px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #000000;
   line-height: 1.7em;
   font-size: 15px;
@@ -305,11 +306,11 @@ Details page styling
 }
 
 .product-price-btn1 p {
-  display:flex;
+  display: flex;
   position: absolute;
   top: 13px;
   height: 50px;
-  font-family: 'Trocchi', serif;
+  font-family: "Trocchi", serif;
   margin: 0 0 0 38px;
   font-size: 28px;
   font-weight: lighter;
@@ -321,25 +322,21 @@ Details page styling
   width: 176px;
   box-sizing: border-box;
   border: transparent;
-  border-radius: 60px;
-  font-family: 'Raleway', sans-serif;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
-  background-color: #00B4CC;
+  background-color: #00b4cc;
   cursor: pointer;
   outline: none;
 }
 
 .product-price-btn1 button:hover {
-  background-color: #79b0a1;
+  background-color: #396bf3;
 }
-
-
-
-
 
 @keyframes App-logo-spin {
   from {
