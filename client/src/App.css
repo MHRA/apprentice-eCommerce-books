@@ -222,6 +222,125 @@ span {
   color: #61dafb;
 }
 
+
+
+
+
+/*
+Details page styling
+*/
+.wrapper1 {
+  height: 420px;
+  width: 1600px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img1 {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+
+.product-img1 img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info1 {
+  float: left;
+  height: 420px;
+  width: 1270px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text1 {
+  height: 300px;
+  width: 1173px;
+  text-align: center;
+}
+
+.product-text1 h1 {
+  margin: 0 0 0 0px;
+  font-size: 34px;
+  color: #000000;
+}
+
+.product-text1 h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text1 h2 {
+  margin: 0 0 47px 38px;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #a8a7a7;
+  letter-spacing: 0.2em;
+}
+
+.product-text1 p {
+  height: 45px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn1 {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+  float: right;
+}
+
+.product-price-btn1 p {
+  display:flex;
+  position: absolute;
+  top: 13px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #000000;
+}
+
+.product-price-btn1 button {
+  height: 50px;
+  width: 176px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #00B4CC;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn1 button:hover {
+  background-color: #79b0a1;
+}
+
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
