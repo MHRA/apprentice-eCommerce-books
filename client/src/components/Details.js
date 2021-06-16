@@ -12,7 +12,10 @@ export default function MainPage ({match}){
   //     window.location.href = nav;
   //     console.log('The link was clicked.')
   // }
-
+  function handleLink(nav) {
+    window.location.href = nav;
+    console.log('The link was clicked.')
+}
 
 
   function getBooks(){
@@ -56,7 +59,7 @@ export default function MainPage ({match}){
               </div>
               <div class="product-price-btn1">
              
-             <button type="button1">add to basket</button>
+              <button type="button" onClick={()=>{handleLink("/basket")}}>Add to basket</button>
            </div>
               <div class="product-price-btn1">
               <p>£<span>{book.price}</span></p>

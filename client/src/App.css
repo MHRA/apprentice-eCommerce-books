@@ -346,3 +346,51 @@ Details page styling
     transform: rotate(360deg);
   }
 }
+
+/*Styling for basket*/
+
+total-cart{
+  text-align: right;
+  position: relative;
+  height: 30px;
+  width: 327px;
+  left: 870px;
+}
+
+.funtional-buttons{
+  background: #9cebd5;
+  border: 0;
+  margin: 10px 5px 0 5px;
+  width: 5%;
+  position: relative;
+  height: 45px;
+  width: 120px;
+  top: 90px;
+  right: 400px;
+  text-align: center;
+
+}
+
+
+.plus-button{
+  background: #9cebd5;
+  border: 0;
+  padding: 20px;
+  margin: 10px 5px 0 5px;
+  width: 5%;
+  outline: none;
+  border-radius: 3px;
+  color: #703688;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  left: 475px;
+  position: relative;
+
+}
+
+.product-text2{
+  height: 100px;
+  width: 1173px;
+  text-align: center;
+}
