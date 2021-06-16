@@ -349,7 +349,7 @@ Details page styling
 
 /*Styling for basket*/
 
-total-cart{
+.total-cart {
   text-align: right;
   position: relative;
   height: 30px;
@@ -357,39 +357,46 @@ total-cart{
   left: 870px;
 }
 
-.funtional-buttons{
-  background: #9cebd5;
+.funtional-buttons {
+  background: #00b4cc;
+  color: #ffffff;
   border: 0;
   margin: 10px 5px 0 5px;
-  width: 5%;
+  border-radius: 10px;
   position: relative;
+  text-transform: uppercase;
   height: 45px;
-  width: 120px;
+  width: 140px;
   top: 90px;
   right: 400px;
   text-align: center;
-
 }
 
+.funtional-buttons button:hover {
+  background-color: #396bf3;
+}
 
-.plus-button{
-  background: #9cebd5;
+.plus-button {
+  background: #00b4cc;
+  color: #ffffff;
   border: 0;
   padding: 20px;
   margin: 10px 5px 0 5px;
   width: 5%;
   outline: none;
   border-radius: 3px;
-  color: #703688;
   font-weight: bold;
   cursor: pointer;
   display: inline-block;
   left: 475px;
   position: relative;
-
 }
 
-.product-text2{
+.plus-button button:hover {
+  background-color: #396bf3;
+}
+
+.product-text2 {
   height: 100px;
   width: 1173px;
   text-align: center;
