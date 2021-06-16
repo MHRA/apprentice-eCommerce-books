@@ -40,23 +40,25 @@ export default function MainPage ({match}){
 
       {items.map((book)=>{
         return(
-          <div className = "wrapper" key = {book.details_id}>
-            <div class = "product-img">
+          <div className = "wrapper1" key = {book.details_id}>
+            <div class = "product-img1">
               <img src={book.image} alt="" height="420" width= "327"/>
             </div>
-            <div class="product-info">
-              <div class="product-text">
+            <div class="product-info1">
+              <div class="product-text1">
                 <h1>{book.name}</h1>
                 <h2>{book.total_rating}</h2>
-                <p>Publisher: {book.publisher}, ISBN 10: {book.isbn_10}, ISBN 13:{book.isbn_13}</p>
-                <p>{book.reviews}</p>
+                <p> <strong>Publisher: </strong> {book.publisher}</p> 
+                <p> <strong>ISBN 10: </strong> {book.isbn_10}</p> 
+                <p> <strong>ISBN 13: </strong> {book.isbn_13}</p>
+                <p> <strong>Review:</strong> {book.reviews}</p>
 
               </div>
-              <div class="product-price-btn">
+              <div class="product-price-btn1">
              
-             <button type="button">add to basket</button>
+             <button type="button1">add to basket</button>
            </div>
-              <div class="product-price-btn">
+              <div class="product-price-btn1">
               <p>£<span>{book.price}</span></p>
               </div>
             </div>      
