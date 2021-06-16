@@ -44,11 +44,11 @@ export default function MainPage ({match}){
       {items.map((book)=>{
         return(
           <div className = "wrapper1" key = {book.details_id}>
-            <div class = "product-img1">
+            <div class = "book-img1">
               <img src={book.image} alt="" height="420" width= "327"/>
             </div>
-            <div class="product-info1">
-              <div class="product-text1">
+            <div class="book-info1">
+              <div class="book-text1">
                 <h1>{book.name}</h1>
                 <h2>{book.total_rating}</h2>
                 <p> <strong>Publisher: </strong> {book.publisher}</p> 
@@ -57,11 +57,11 @@ export default function MainPage ({match}){
                 <p> <strong>Review:</strong> {book.reviews}</p>
 
               </div>
-              <div class="product-price-btn1">
+              <div class="book-price-btn1">
              
               <button type="button" onClick={()=>{handleLink(`/basket/${book.details_id}`)}}>Add to basket</button>
            </div>
-              <div class="product-price-btn1">
+              <div class="book-price-btn1">
               <p>£<span>{book.price}</span></p>
               </div>
             </div>      

@@ -50,25 +50,23 @@ function getBooks(){
       {items.map((book)=>{
         return(
           <div className = "wrapper1" key = {book.details_id}>
-            <div class = "product-img1">
+            <div class = "book-img1">
               <img src={book.image} alt="" height="420" width= "327"/>
             </div>
-            <div class="product-info1">
-              <div class="product-text2">
+            <div class="book-info1">
+              <div class="book-text2">
                 <h1>{book.name}     £{book.price}</h1>
-                {/* <p>£<span>{book.price}</span></p> */}
                 <p>Publisher: {book.publisher} ISBN 10: {book.isbn_10} ISBN 13: {book.isb_13}</p>
-                {/* <p>{book.reviews}</p> */}
               </div>
               <div>
-                <button class="funtional-buttons">
+                <button class="functional-buttons">
                   Delete
                 </button>
-                <button class="funtional-buttons">
+                <button class="functional-buttons">
                   Save for later
                 </button>
-                <button class="funtional-buttons">
-                  see more like this
+                <button class="functional-buttons">
+                  See more like this
                 </button>
               </div>
               <div class="total-cart">
@@ -85,7 +83,7 @@ function getBooks(){
                   +
                   </button>
                 </div>
-                <div class="product-price-btn1">
+                <div class="book-price-btn1">
                 <button type="button">Proceed to Checkout</button>
               </div>
             </div>      
